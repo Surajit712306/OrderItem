@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddHttpClient("OrderItem", options =>
 {
-    options.BaseAddress = new Uri("https://localhost:7077");
+    options.BaseAddress = new Uri("https://menuitemlistingapi.azurewebsites.net");
 });
 builder.Services.AddAuthentication(options =>
 {
